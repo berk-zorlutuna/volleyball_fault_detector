@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python
+cachedir: .pytest_cache
+rootdir: /home/user/volleyball_fault_detector
+plugins: anyio-4.15.1
+collecting ... collected 16 items
+
+test_detector.py::test_stc01_single_hit_segmented PASSED
+test_detector.py::test_stc02_noise_only_no_contacts PASSED
+test_detector.py::test_stc03_spike_legal PASSED
+test_detector.py::test_stc04_two_hand_set_legal PASSED
+test_detector.py::test_stc05_catch_detected PASSED
+test_detector.py::test_stc06_double_within_contact PASSED
+test_detector.py::test_stc07_double_separate_contacts PASSED
+test_detector.py::test_stc08_first_contact_exempt PASSED
+test_detector.py::test_stc09_four_hits PASSED
+test_detector.py::test_stc10_block_not_counted PASSED
+test_detector.py::test_stc11_possession_change_resets_count PASSED
+test_detector.py::test_stc12_packet_roundtrip_and_security PASSED
+test_detector.py::test_stc13_retry_delivers PASSED
+test_detector.py::test_stc14_decision_latency PASSED
+test_detector.py::test_stc15_monte_carlo_accuracy legal: 10000/10000 = 100.00 %
+CATCH: 10000/10000 = 100.00 %
+DOUBLE_CONTACT: 10000/10000 = 100.00 %
+PASSED
+test_detector.py::test_stc16_thresholds_configurable PASSED
+
+============================= 16 passed in 11.49s ==============================
